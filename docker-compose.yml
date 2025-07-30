@@ -2,5 +2,7 @@ services:
   dynamic-api:
     image: nahiyanswe/dynamic-api:${TAG}
     container_name: dynamic-API-Container
+    volumes:
+      - ./app.py:/app
     ports:
       - "80:8000"
