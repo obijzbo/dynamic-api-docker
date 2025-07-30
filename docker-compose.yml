@@ -1,0 +1,6 @@
+services:
+  dynamic-api:
+    image: nahiyanswe/dynamic-api:${TAG}
+    container_name: dynamic-API-Container
+    ports:
+      - "80:8000"

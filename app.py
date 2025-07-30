@@ -9,6 +9,10 @@ app = FastAPI()
 def root():
     return "Enter any text in the URL"
 
+@app.get("/greetins")
+def greetins():
+    return "Hello!!!"
+
 @app.get("/{text}")
 def generate_audio(text: str):
     output_file = "output.mp3"

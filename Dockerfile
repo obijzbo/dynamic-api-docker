@@ -1,8 +1,8 @@
 FROM python:3.10
 
-WORKDIR /var/app
+WORKDIR /app
 
-COPY . /var/app
+COPY . .
 
 RUN pip3 install -r requirements.txt
 
